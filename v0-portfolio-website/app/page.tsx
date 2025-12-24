@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Github, Linkedin, ExternalLink, Download, Mail, User } from "lucide-react"
+import { Github, Linkedin, ExternalLink, Download, Mail } from "lucide-react"
 
 export default function Portfolio() {
   const techStack = [
@@ -36,7 +36,7 @@ export default function Portfolio() {
       description: "A production-ready billing app with Razorpay integration, PDF generation, and WhatsApp sharing.",
       tech: ["React", "Django", "PostgreSQL"],
       type: "SaaS Billing System",
-      link: "#", // Add your actual project link here
+      link: "https://sparkbill.vercel.app/", 
     },
     {
       title: "Course Selling Website",
@@ -44,7 +44,7 @@ export default function Portfolio() {
         "A dynamic education platform with instructor dashboards, secure login, and real-time progress tracking.",
       tech: ["React", "Django", "PostgreSQL"],
       type: "Education Platform",
-      link: "#", // Add your actual project link here
+      link: "#", // Replace with actual link when available
     },
   ]
 
@@ -243,7 +243,7 @@ export default function Portfolio() {
           </div>
 
           <div className="mt-8 border-t border-border pt-8 text-center">
-            <p className="text-sm text-muted-foreground">© {newqpDate().getFullYear()} Naveen V. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Naveen V. All rights reserved.</p>
           </div>
         </div>
       </footer>
